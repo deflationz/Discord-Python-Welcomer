@@ -29,7 +29,6 @@ async def on_member_join(member):
 async def on_member_remove(member):
     channel = client.get_channel(922379989343699014)
     embed=discord.Embed(title="Goodbye!", description=f"{member.mention}just left the {member.guild.name}, hope to see you again, {member.display_name}!", color=0xffffff)
-    embed.add_field(name="undefined", value="undefined", inline=False)
     embed.set_thumbnail(url = member.avatar_url)
     embed.set_footer(text = "DeflationzWare")
     await channel.send(embed=embed)
